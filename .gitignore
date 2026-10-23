@@ -1,0 +1,15 @@
+# Private files: Cloudflare Pages serves every tracked file
+CLAUDE.md
+.claude/
+specs/
+notes/
+*.notes.md
+Profile*.pdf
+assets/1786032216515.jpg
+assets/certificates/raw/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mahmoud Sallam · Software Engineering Student</title>
+  <meta name="description" content="Mahmoud Sallam, Computer Software Engineering student at Irbid National University and 42 Irbid Piscine alumnus. C, Linux, Git, backend and systems.">
+  <meta name="theme-color" content="#08090d">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Mahmoud Sallam · Software Engineering Student">
+  <meta property="og:description" content="C, Linux and Git. Heading toward backend and systems development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile-photo.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Icons + Geist load without blocking first paint -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap">
+  </noscript>
+  <link rel="preload" as="image" href="assets/profile-photo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Drifting wallpaper: soft colour shapes the glass can refract -->
+  <div class="wallpaper" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <span class="blob blob-4"></span>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#home">
+      <span class="nav-monogram" aria-hidden="true">MS</span>
+      <span class="nav-name">Mahmoud Sallam</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">What I do</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="#contact">Contact</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu is a sibling of the nav (not a child) so its own backdrop-filter is never blocked -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#services">What I do</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" class="btn btn-primary">Contact</a>
+  </div>
+
+  <main id="main">
+    <!-- ===== 1. Home ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-chip animate-on-scroll" data-stagger="0">
+            <span class="status-dot" aria-hidden="true"></span>
+            Currently building an inspection app
+          </p>
+          <h1 class="hero-name animate-on-scroll" data-stagger="1">
+            <span>Mahmoud</span>
+            <span>Sallam</span>
+          </h1>
+          <p class="hero-title animate-on-scroll" data-stagger="2">Software Engineering Student</p>
+          <p class="hero-pitch animate-on-scroll" data-stagger="3">
+            Building strong low-level foundations in C, Linux and Git, and heading toward backend and systems development.
+          </p>
+          <div class="hero-meta animate-on-scroll" data-stagger="4">
+            <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Irbid, Jordan</span>
+            <span><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> 42 Irbid Piscine Alumni</span>
+          </div>
+          <div class="hero-cta animate-on-scroll" data-stagger="5">
+            <a class="btn btn-primary" href="#contact">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact me
+            </a>
+            <a class="btn btn-glass" href="assets/cv.pdf" download="Mahmoud-Sallam-CV.pdf">
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="avatar animate-on-scroll" data-stagger="1">
+            <span class="avatar-arc" aria-hidden="true"></span>
+            <span class="avatar-ring" aria-hidden="true"></span>
+            <span class="avatar-orbit" aria-hidden="true"><span class="avatar-dot"></span></span>
+            <img class="avatar-photo" src="assets/profile-photo.jpg" width="400" height="400" alt="Portrait of Mahmoud Sallam" fetchpriority="high">
+          </div>
+
+          <!-- Stats: real counts only -->
+          <div class="bento">
+            <div class="glass stat animate-on-scroll" data-stagger="2">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Years studying software engineering</span>
+            </div>
+            <div class="glass stat animate-on-scroll" data-stagger="3">
+              <span class="stat-num">11</span>
+              <span class="stat-label">C &amp; shell projects at 42 Piscine</span>
+            </div>
+            <div class="glass stat animate-on-scroll" data-stagger="4">
+              <span class="stat-num">24</span>
+              <span class="stat-label">Committee members led at IEEE INU</span>
+            </div>
+            <!-- Shown instead of the certificates tile until certificates are added -->
+            <div class="glass stat animate-on-scroll" data-stagger="5" data-stat="events">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Technical events delivered</span>
+            </div>
+            <!-- Auto-shown (count synced by main.js) once at least one .cert-card exists -->
+            <div class="glass stat animate-on-scroll" data-stagger="5" data-stat="certificates" hidden>
+              <span class="stat-num" data-count="certificates">0</span>
+              <span class="stat-label">Certificates earned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. About ===== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">About</p>
+          <h2>Learning the hard way: close to the machine.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass card about-bio animate-on-scroll" data-stagger="0">
+            <p>
+              I'm a Computer Software Engineering student at Irbid National University with a strong foundation in low-level programming,
+              built through the intensive <strong>42 Irbid Piscine</strong>. There I worked in C and shell on Linux, used Git daily, and learned
+              through peer-to-peer problem solving, with no teachers or lectures.
+            </p>
+            <p>
+              Alongside my studies I lead the Program Committee at <strong>IEEE INU</strong>, managing a team of 24 members who organize
+              technical events and workshops, and I co-organized <strong>IEEE MegaMeet 2026</strong>, a regional event with 150 attendees from
+              5 student branches. I'm interested in backend and systems development.
+            </p>
+          </div>
+          <ul class="glass card facts animate-on-scroll" data-stagger="1">
+            <li>
+              <span class="fact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+              <span><span class="fact-label">Location</span><span class="fact-value">Irbid, Jordan</span></span>
+            </li>
+            <li>
+              <span class="fact-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+              <span><span class="fact-label">Education</span><span class="fact-value">B.E. Computer Software Engineering<br><small>Irbid National University · 2024 – 2027</small></span></span>
+            </li>
+            <li>
+              <span class="fact-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+              <span><span class="fact-label">Bootcamp</span><span class="fact-value">42 Irbid Piscine · 2026</span></span>
+            </li>
+            <li>
+              <span class="fact-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></span>
+              <span><span class="fact-label">Languages</span><span class="fact-value">Arabic, English</span></span>
+            </li>
+            <li>
+              <span class="fact-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
+              <span><span class="fact-label">Focus</span><span class="fact-value">Backend &amp; systems development</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Services ===== -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">What I do</p>
+          <h2>Where I put my hours.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="glass card service animate-on-scroll" data-stagger="0">
+            <span class="icon-tile"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+            <h3>Systems programming in C</h3>
+            <p>Pointers, memory management, recursion and algorithms. Writing C that is careful about every byte it touches.</p>
+          </article>
+          <article class="glass card service animate-on-scroll" data-stagger="1">
+            <span class="icon-tile"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+            <h3>Linux, shell &amp; Git</h3>
+            <p>Working from the command line every day: shell scripting, Unix tools and a clean Git workflow on shared projects.</p>
+          </article>
+          <article class="glass card service animate-on-scroll" data-stagger="2">
+            <span class="icon-tile"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+            <h3>Technical event leadership</h3>
+            <p>Planning workshops and sessions with a 24-person committee, coordinating speakers, faculty and partners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Experience ===== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">Experience</p>
+          <h2>What I've been part of.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot is-current" aria-hidden="true"></span>
+            <article class="glass card timeline-card animate-on-scroll" data-stagger="0">
+              <header class="timeline-head">
+                <span class="icon-tile"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Head of Program Committee</h3>
+                  <p class="timeline-org">IEEE INU · Irbid, Jordan</p>
+                </div>
+                <span class="date-chip">Oct 2025 – Present</span>
+              </header>
+              <ul>
+                <li>Lead a team of 24 members planning technical events, workshops and sessions.</li>
+                <li>Coordinate with speakers, faculty and partners. 4 events delivered so far, attended by 100+ students.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="glass card timeline-card animate-on-scroll" data-stagger="0">
+              <header class="timeline-head">
+                <span class="icon-tile"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+                <div>
+                  <h3>MegaMeet 2026 Organizer</h3>
+                  <p class="timeline-org">IEEE INU</p>
+                </div>
+                <span class="date-chip">May 2026</span>
+              </header>
+              <ul>
+                <li>Co-organized a regional IEEE event with 150 attendees from 5 student branches.</li>
+                <li>Managed event logistics and on-site operations, including venue setup, registration and session timing.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="glass card timeline-card animate-on-scroll" data-stagger="0">
+              <header class="timeline-head">
+                <span class="icon-tile"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Piscine Participant</h3>
+                  <p class="timeline-org">42 Irbid</p>
+                </div>
+                <span class="date-chip">Apr – May 2026</span>
+              </header>
+              <ul>
+                <li>Completed an intensive 4-week C programming bootcamp based on peer learning and project work.</li>
+                <li>Passed 2 exams and completed 11 projects, including team "rush" projects under tight deadlines.</li>
+                <li>Built projects in C and shell on Linux covering pointers, memory management, recursion and algorithms.</li>
+              </ul>
+            </article>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="glass card timeline-card animate-on-scroll" data-stagger="0">
+              <header class="timeline-head">
+                <span class="icon-tile"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Minbar Sound Engineer</h3>
+                  <p class="timeline-org">Athar Team</p>
+                </div>
+                <span class="date-chip">Oct 2025</span>
+              </header>
+              <ul>
+                <li>Managed live audio setup and mixing for a public speaking competition with 90+ attendees.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 5. Projects =====
+         Order = DOM order, newest → oldest. data-stagger must be unique and contiguous (0..N-1).
+         Adding a card at the top? Renumber every other card. -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built and am building.</h2>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter projects">
+          <span class="filter-indicator" aria-hidden="true"></span>
+          <button class="filter-pill is-active" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="filter-pill" type="button" role="tab" aria-selected="false" data-filter="apps">Apps</button>
+          <button class="filter-pill" type="button" role="tab" aria-selected="false" data-filter="audio">Audio</button>
+          <button class="filter-pill" type="button" role="tab" aria-selected="false" data-filter="systems">Systems</button>
+        </div>
+
+        <div class="projects-grid collapsed">
+          <div class="glass-card project-card animate-on-scroll tilt-card" data-tags="apps" data-stagger="0">
+            <span class="card-spotlight" aria-hidden="true"></span>
+            <span class="project-icon"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
+            <p class="project-meta">In progress · App</p>
+            <h3>Inspection App</h3>
+            <p><span class="todo">TODO</span> Add a 2-line description of the inspection app (what it inspects, who uses it, the stack).</p>
+            <div class="project-tags"><span class="tag">In progress</span><span class="tag">TODO stack</span></div>
+            <!-- TODO: replace with the repo URL once it's public -->
+            <a class="project-link" href="https://github.com/Urfavbr0wnboi" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+
+          <div class="glass-card project-card animate-on-scroll tilt-card" data-tags="audio" data-stagger="1">
+            <span class="card-spotlight" aria-hidden="true"></span>
+            <span class="project-icon"><i class="fa-solid fa-music" aria-hidden="true"></i></span>
+            <p class="project-meta">Oct 2026 · Audio</p>
+            <h3>Smart Audio Studio</h3>
+            <p>A user-friendly music production software. <span class="todo">TODO</span> add features and stack.</p>
+            <div class="project-tags"><span class="tag">Audio</span><span class="tag">Desktop</span></div>
+            <a class="project-link" href="https://github.com/Urfavbr0wnboi/Smart-Audio-Studio" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+
+          <div class="glass-card project-card animate-on-scroll tilt-card" data-tags="systems" data-stagger="2">
+            <span class="card-spotlight" aria-hidden="true"></span>
+            <span class="project-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+            <p class="project-meta">Apr 2026 · Systems</p>
+            <h3>42 Piscine: C &amp; Shell</h3>
+            <p>11 projects and 2 exams in C and shell on Linux, covering pointers, memory management, recursion and algorithms, plus team rush projects.</p>
+            <div class="project-tags"><span class="tag">C</span><span class="tag">Shell</span><span class="tag">Linux</span><span class="tag">Git</span></div>
+            <!-- TODO: link the Piscine repos if you publish them -->
+            <a class="project-link" href="https://github.com/Urfavbr0wnboi" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="toggle-wrap">
+          <button class="btn btn-glass projects-toggle" type="button" aria-expanded="false" hidden>Show More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Skills ===== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">Skills</p>
+          <h2>The stack I reach for.</h2>
+          <p class="lede"><span class="legend-dot" aria-hidden="true"></span> Highlighted = core skills</p>
+        </div>
+        <div class="glass card skill-panel animate-on-scroll">
+          <div class="skill-cloud">
+            <span class="skill-node lg">C</span>
+            <span class="skill-node">Problem Solving</span>
+            <span class="skill-node lg">Linux</span>
+            <span class="skill-node">Unix CLI</span>
+            <span class="skill-node lg">Git</span>
+            <span class="skill-node">Peer Code Review</span>
+            <span class="skill-node lg">Shell Scripting</span>
+            <span class="skill-node">Event Planning</span>
+            <span class="skill-node lg">Pointers</span>
+            <span class="skill-node">Speaker Coordination</span>
+            <span class="skill-node lg">Memory Management</span>
+            <span class="skill-node">Teamwork Under Deadlines</span>
+            <span class="skill-node lg">Recursion</span>
+            <span class="skill-node">Live Sound Mixing</span>
+            <span class="skill-node lg">Algorithms</span>
+            <span class="skill-node">Arabic</span>
+            <span class="skill-node lg">Team Leadership</span>
+            <span class="skill-node">English</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. Certificates =====
+         Add cards as: <button class="cert-card glass" type="button" data-full="assets/certificates/web/NAME.webp"> ... (see README) -->
+    <section id="certificates">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <p class="eyebrow">Certificates</p>
+          <h2>Proof of the work.</h2>
+        </div>
+        <div class="certs-grid collapsed"></div>
+        <div class="glass card certs-empty animate-on-scroll">
+          <i class="fa-solid fa-award" aria-hidden="true"></i>
+          <p><span class="todo">TODO</span> Certificates are on the way. Add WebP scans to <code>assets/certificates/web/</code>.</p>
+        </div>
+        <div class="toggle-wrap">
+          <button class="btn btn-glass certs-toggle" type="button" aria-expanded="false" hidden>Show More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. Contact ===== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head center animate-on-scroll">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk.</h2>
+          <p class="lede">Open to internships, collaborations and technical events. The fastest way to reach me is email.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="glass card contact-card animate-on-scroll" data-stagger="0" href="mailto:mahmoudsallam233@gmail.com">
+            <span class="icon-tile"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">mahmoudsallam233@gmail.com</span>
+          </a>
+          <a class="glass card contact-card animate-on-scroll" data-stagger="1" href="https://www.linkedin.com/in/mahmoud-sallam233" target="_blank" rel="noopener">
+            <span class="icon-tile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">in/mahmoud-sallam233</span>
+          </a>
+          <a class="glass card contact-card animate-on-scroll" data-stagger="2" href="https://github.com/Urfavbr0wnboi" target="_blank" rel="noopener">
+            <span class="icon-tile"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@Urfavbr0wnboi</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 9. Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Mahmoud Sallam · Irbid, Jordan</p>
+      <a href="#home" class="footer-top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <!-- Certificate lightbox. The scrim fades on ::before; the panel fades itself, so its blur never pops -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" aria-hidden="true">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="Close preview"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <div class="lightbox-media skeleton"><img alt=""></div>
+      <div class="lightbox-caption">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-sub"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
