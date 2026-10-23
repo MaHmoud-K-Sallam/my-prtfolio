@@ -454,6 +454,37 @@
     </div>
   </div>
 
+  <!-- Chat widget. data-api = URL of the chatbot API (MS-chatbot), no trailing slash.
+       The panel and the launcher each carry their own blur and fade themselves (pitfall 1). -->
+  <div class="chat-island" id="chat-island" data-api="http://localhost:8000">
+    <div class="chat-panel" id="chat-panel" role="dialog" aria-label="Ask about Mahmoud" aria-hidden="true">
+      <header class="chat-head">
+        <span class="chat-avatar" aria-hidden="true"><i class="fa-solid fa-robot"></i></span>
+        <div>
+          <h3>Ask about Mahmoud</h3>
+          <p>AI assistant · answers from his CV</p>
+        </div>
+        <button class="chat-close" type="button" aria-label="Close chat"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      </header>
+      <div class="chat-log" aria-live="polite">
+        <div class="chat-msg is-bot"><p>Hi! I can answer questions about Mahmoud's experience, projects and skills.</p></div>
+        <div class="chat-suggestions">
+          <button type="button" class="chat-chip">What is he working on?</button>
+          <button type="button" class="chat-chip">Tell me about the 42 Piscine</button>
+          <button type="button" class="chat-chip">How can I contact him?</button>
+        </div>
+      </div>
+      <form class="chat-form">
+        <input class="chat-input" type="text" name="message" maxlength="500" autocomplete="off" placeholder="Ask a question…" aria-label="Your question" required>
+        <button class="chat-send" type="submit" aria-label="Send"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+      </form>
+    </div>
+    <button class="chat-launcher" type="button" aria-label="Open chat" aria-expanded="false" aria-controls="chat-panel">
+      <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+    </button>
+  </div>
+
   <script src="main.js" defer></script>
+  <script src="chat.js" defer></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ A static single-page portfolio in a dark "Liquid Glass" style. It is plain HTML,
 index.html   page markup and all content
 style.css    design tokens (top of file) and styles
 main.js      reveal, nav, project filters, tilt, certificates and lightbox
+chat.js      chat widget (talks to the MS-chatbot API)
 assets/      profile photo, favicon, CV, certificates/web/*.webp
 ```
 
@@ -62,6 +63,14 @@ Cards live in `div.projects-grid` in `index.html`. **The page shows them in DOM 
    </button>
    ```
    `main.js` counts the cards for you. It updates the hero stat tile, which replaces the "events" tile once there is at least 1 certificate, and the "Show N More" label.
+
+## Chat widget
+
+`chat.js` plus section 20 of `style.css` add the "Ask about Mahmoud" assistant. It calls the chatbot API in `MS-chatbot-main/`, whose README covers running and deploying it.
+
+- The API address lives in `data-api` on `<div id="chat-island">` in `index.html`. It is `http://localhost:8000` for local testing. Change it to the deployed API URL before publishing.
+- The site's domain must be listed in the API's `ALLOWED_ORIGINS`, or the browser blocks the request.
+- What the bot knows comes from `MS-chatbot-main/background.md`, not from this page. Update both when you add a project or certificate.
 
 ## Deploy to Cloudflare Pages
 
