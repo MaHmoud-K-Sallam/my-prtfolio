@@ -68,7 +68,7 @@ Cards live in `div.projects-grid` in `index.html`. **The page shows them in DOM 
 
 `chat.js` plus section 20 of `style.css` add the "Ask about Mahmoud" assistant. It calls the chatbot API in `MS-chatbot-main/`, whose README covers running and deploying it.
 
-- The API address lives in `data-api` on `<div id="chat-island">` in `index.html`. It is `http://localhost:8000` for local testing. Change it to the deployed API URL before publishing.
+- The API address lives in `data-api` on `<div id="chat-island">` in `index.html`. It points at the deployed API, `https://ms-chatbot.onrender.com`. To test against a local backend, temporarily set it to `http://localhost:8000`.
 - The site's domain must be listed in the API's `ALLOWED_ORIGINS`, or the browser blocks the request.
 - What the bot knows comes from `MS-chatbot-main/background.md`, not from this page. Update both when you add a project or certificate.
 
